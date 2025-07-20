@@ -1,0 +1,75 @@
+:root {
+  --white: #FFFFFF;
+  --blue-gray: #E0ECF8;
+  --dark-blue-gray: #A8C4E8;
+}
+
+body {
+  background-color: var(--white);
+  color: #333;
+}
+
+
+header .navbar {
+  transition: background 0.3s;
+}
+
+
+#hero {
+  background: var(--blue-gray);
+  padding: 4rem 0;
+  text-align: center;
+}
+
+
+.cta-btn {
+  border-radius: 50px;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2);
+  }
+  70% {
+    box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+}
+
+section {
+  padding: 4rem 0;
+}
+
+
+.bg-light {
+  background-color: var(--white) !important;
+}
+
+
+.bg-blue-gray {
+  background-color: var(--blue-gray) !important;
+}
+
+
+button.btn-dark {
+  background-color: var(--dark-blue-gray);
+  border: none;
+  color: var(--white);
+  transition: transform 0.2s;
+}
+button.btn-dark:hover {
+  transform: scale(1.05);
+}
+
+
+.needs-validation .was-validated .form-control:invalid {
+  border-color: #dc3545;
+}
+.needs-validation .was-validated .form-control:valid {
+  border-color: #28a745;
+}
+
+

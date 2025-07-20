@@ -1,0 +1,148 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Instituto Online – Innovación en Formación</title>
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+  <!-- HEADER & NAVBAR -->
+  <header>
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold text-dark" href="#hero">InstitutoOnline</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Menú">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active" href="#hero">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#cursos">Cursos</a></li>
+            <li class="nav-item"><a class="nav-link" href="#duracion">Duración</a></li>
+            <li class="nav-item"><a class="nav-link" href="#precios">Precios</a></li>
+            <li class="nav-item"><a class="nav-link" href="#sucursales">Sucursales</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section id="hero" class="vh-100 d-flex align-items-center justify-content-center text-center">
+    <div class="container">
+      <h1 class="display-4 fw-bold mb-3">TECHNOLOGIA AL ALCANZE DE TUS MANOS</h1>
+      <p class="lead mb-4">Cursos online con certificación profesional</p>
+      <a href="#cursos" class="btn btn-lg btn-outline-secondary cta-btn">Explorar Cursos</a>
+    </div>
+  </section>
+
+  <!-- CURSOS -->
+  <section id="cursos" class="py-5">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-5">Nuestros Cursos</h2>
+      <div class="row g-4">
+        <!-- Curso 1 -->
+        <article class="col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm">
+            <img src="C:\Users\HP\Desktop\evaluacion programacion\concepto-diseno-web-dibujos_1134-77.avif" class="card-img-top" alt="Curso Diseño Web">
+            <div class="card-body">
+              <h3 class="card-title h5">Diseño Web Profesional</h3>
+              <p class="card-text">Aprende HTML, CSS y Bootstrap  desde cero.</p>
+            </div>
+            <footer class="card-footer bg-white border-0">
+              <span class="fw-bold">Duración:</span> 8 semanas
+            </footer>
+          </div>
+        </article>
+        <!-- Más cursos... -->
+      </div>
+    </div>
+  </section>
+
+  <!-- DURACIÓN -->
+  <section id="duracion" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-4">Duración de Programas</h2>
+      <p class="text-center">Nuestros programas tienen una duración flexible según modalidad: intensivo, parcial o extendido.</p>
+    </div>
+  </section>
+
+  <!-- PRECIOS -->
+  <section id="precios" class="py-5">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-4">Planes y Precios</h2>
+      <div class="row g-4 justify-content-center">
+        <div class="col-md-4">
+          <div class="card text-center shadow-sm">
+            <div class="card-body">
+              <h3 class="card-title">Estándar</h3>
+              <p class="display-6 fw-bold">$150.000 CLP</p>
+              <ul class="list-unstyled mb-3">
+                <li>Acceso a videos</li>
+                <li>Certificado digital</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Más planes... -->
+      </div>
+    </div>
+  </section>
+
+  <!-- SUCURSALES -->
+  <section id="sucursales" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-4">Nuestras Sucursales</h2>
+      <p class="text-center">Presenciales en Santiago, Viña del Mar y Concepción.</p>
+    </div>
+  </section>
+
+  <!-- FORMULARIO FINAL -->
+  <aside id="info-form" class="bg-blue-gray py-4">
+    <div class="container">
+      <h2 class="h4 text-center mb-3">Solicita Información</h2>
+      <form class="row g-3 justify-content-center needs-validation" novalidate>
+        <div class="col-md-4">
+          <label for="nombre" class="form-label">Nombre completo</label>
+          <input type="text" class="form-control" id="nombre" required>
+        </div>
+        <div class="col-md-4">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" required>
+        </div>
+        <div class="col-12 text-center">
+          <button type="submit" class="btn btn-dark btn-lg">Enviar</button>
+        </div>
+      </form>
+    </div>
+  </aside>
+
+  <!-- FOOTER -->
+  <footer class="text-center py-3">
+    © 2025 Instituto Online. Todos los derechos reservados.
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Navbar solid background on scroll
+    const nav = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) nav.classList.add('bg-white', 'shadow-sm');
+      else nav.classList.remove('bg-white', 'shadow-sm');
+    });
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
